@@ -14,3 +14,12 @@ class QuoteEntity extends Equatable {
   @override
   List<Object?> get props => [id, quote];
 }
+
+class QuoteListEntity extends Equatable {
+  final List<QuoteEntity>? quotes;
+
+  const QuoteListEntity({required this.quotes});
+
+  @override
+  List<Object?> get props => [quotes];
+}
